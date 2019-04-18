@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lab6_task1.css">
+    <title>lab6_task1</title>
+</head>
+
+<body>
+    <div class="container">
+        <input class="first" type="radio" name="slide-trigger" value="first" id="first" checked />
+        <input class="second" type="radio" name="slide-trigger" value="second" id="second" />
+        <input class="third" type="radio" name="slide-trigger" value="third" id="third" />
+        <input class="fourth" type="radio" name="slide-trigger" value="fourth" id="fourth" />
+        <div class="img-modal img-1--modal" id="img-1"></div>
+        <div class="img-modal img-2--modal" id="img-2"></div>
+        <div class="img-modal img-3--modal" id="img-3"></div>
+        <div class="img-modal img-4--modal" id="img-4"></div>
+        <div class="img-modal img-5--modal" id="img-5"></div>
+        <div class="img-modal img-6--modal" id="img-6"></div>
+        <div class="img-modal img-7--modal" id="img-7"></div>
+        <div class="img-modal img-8--modal" id="img-8"></div>
+        <div class="img-modal img-9--modal" id="img-9"></div>
+        <div class="img-modal img-10--modal" id="img-10"></div>
+        <div class="img-modal img-11--modal" id="img-11"></div>
+        <div class="img-modal img-12--modal" id="img-12"></div>
+        <div class="img-modal img-13--modal" id="img-13"></div>
+        <div class="img-modal img-14--modal" id="img-14"></div>
+        <div class="img-modal img-15--modal" id="img-15"></div>
+        <div class="img-modal img-16--modal" id="img-16"></div>
+        <div class="overlay"></div>
+        <a href="#" class="close">&#x2718;</a>
+        <header class="header">
+            <h1 class="header__title">Рецепты шашлыков</h1>
+        </header>
+        <div class="slider">
+            <label class="slider__label slider__label--left-first" for="first">&#60;</label>
+            <label class="slider__label slider__label--right-first" for="first">&#62;</label>
+            <label class="slider__label slider__label--left-second" for="second">&#60;</label>
+            <label class="slider__label slider__label--right-second" for="second">&#62;</label>
+            <label class="slider__label slider__label--left-third" for="third">&#60;</label>
+            <label class="slider__label slider__label--right-third" for="third">&#62;</label>
+            <label class="slider__label slider__label--left-fourth" for="fourth">&#60;</label>
+            <label class="slider__label slider__label--right-fourth" for="fourth">&#62;</label>
+            <div class="slider__row">
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href=#img-1>
+                            <div class="slide__img-1"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из говядины</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Говядина — 2 Килограмма </li>
+                            <li class="slide__item">Лук — 150 Грамм </li>
+                            <li class="slide__item">Сладкий перец — 2 Штуки</li>
+                            <li class="slide__item">Базилик — - По вкусу Соль</li>
+                            <li class="slide__item">Оливковое масло — 50 Миллилитров</li>
+                            <li class="slide__item">Цуккини — 2 Штуки</li>
+                            <li class="slide__item">перец — - По вкусу</li>
+                        </ul>
+                        <p class="slide__content">В природных условиях нет блюда лучше, чем шашлык, однако хорошо приготовить шашлык не так-то просто, как может показаться на первый взгляд. В приготовлении шашлыка существует множество хитростей, благодаря которым мясо не становится
+                            сухим, а наоборот, получается сочным и мягким. Говяжий шашлык, приготовленный по этому рецепту с фото, будет именно таким - нежнейшим, очень сочным и мягким. Приятных вам пикников!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-2">
+                            <div class="slide__img-2"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из свинины в уксусе</h2>
+                        <ul class="slide__list">
+
+                            <li class="slide__item">свинина — 2 Килограмма </li>
+                            <li class="slide__item">лук — 300 Грамм </li>
+                            <li class="slide__item">уксус — 250 Миллилитров (6 процентный )</li>
+                            <li class="slide__item">приправа к мясу — 3 Ст. ложки</li>
+                            <li class="slide__item">соль — По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Мариновать мясо нужно в кислоте - хорошо подходят лимонный сок и, в частности, уксус. В этом сам принцип маринования. Конечно, существуют разные версии правильной мариновки шашлыка, однако одна из них - это шашлык в уксусе. Немногие
+                            маринады придают мясу такой хороший вкус, какой придает уксус. Уксус - это правильный с химической точки зрения маринад для свинины.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-3">
+                            <div class="slide__img-3"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Правильный Шашлык из свинины</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Свинина — 1 Килограмм </li>
+                            <li class="slide__item">Лук — 3 Штуки </li>
+                            <li class="slide__item">Специи — По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Очень простой рецепт правильного шашлыка из свинины. Но вы же, наверное, и раньше слышали о том, что все гениальное - просто! Так что и относительно этого рецепта приготовления правильного шашлыка из свинины не сомневайтесь, -
+                            получится вкусное и нежное мясо!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-4">
+                            <div class="slide__img-4"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из баранины</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">баранина — 2 Килограмма (бедренная часть) </li>
+                            <li class="slide__item">головка чеснока — 1 Штука </li>
+                            <li class="slide__item">лук репчатый — 1 Килограмм</li>
+                            <li class="slide__item">помидор — 1 Штука</li>
+                            <li class="slide__item">приправа для мяса — - По вкусу</li>
+                            <li class="slide__item">соль и перец — - По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Классический рецепт шашлыка из баранины маринованной в чесноке, репчатом луке с помидорами. Бараний шашлык намного нежнее чем шашлыки из других сортов мяса.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-5">
+                            <div class="slide__img-5"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Сочный шашлык из свинины</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Шея свиная — 2 Килограмма</li>
+                            <li class="slide__item">Лук — 700 Грамм</li>
+                            <li class="slide__item">Чеснок — 3-4 Зубчиков</li>
+                            <li class="slide__item">Горчица — 2 Ст. ложки</li>
+                            <li class="slide__item">Лимонный сок — 50 Миллилитров</li>
+                            <li class="slide__item">Томатный сок — 0,5 Литра</li>
+                            <li class="slide__item">Сахар — 1 Чайная ложка</li>
+                            <li class="slide__item">Лавровый лист — 2-3 Штук</li>
+                            <li class="slide__item">Перец красный — По вкусу</li>
+                            <li class="slide__item">Перец черный горошком — 5-6 Штук</li>
+                            <li class="slide__item">Соль — По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Как приготовить шашлык из свинины — сочный и вместе с тем покрытый хрустящей румяной корочкой — вы узнаете из этого рецепта. Хороший маринад, правильный температурный режим - и шашлык готов!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-6">
+                            <div class="slide__img-6"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Узбекский шашлык</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Баранина — 500 Грамм</li>
+                            <li class="slide__item">Сало курдючное — 150 Грамм</li>
+                            <li class="slide__item">Мука — 2 Ст. ложки</li>
+                            <li class="slide__item">Лук репчатый — 3 Штуки</li>
+                            <li class="slide__item">Уксус 5% — 4-5 Ст. ложек</li>
+                            <li class="slide__item">Соль — По вкусу</li>
+                            <li class="slide__item">Анис — По вкусу</li>
+                            <li class="slide__item">Перец красный молотый — По вкусу</li>
+                            <li class="slide__item">Пучок кинзы — 1 Штука</li>
+                        </ul>
+                        <p class="slide__content">Узбеки по вероисповеданию - мусульмане-сунниты, так что настоящий узбекский шашлык готовится преимущественно из баранины. ее, конечно, любят не все, но лучший способ распробовать это мясо - отведать узбекского шашлыка, приготовленного
+                            чин по чину: с курдючным салом, которое делает мясо сочным, и анисом, придающем ему удивительный аромат!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-7">
+                            <div class="slide__img-7"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык на кефире</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Свинина — 1 Килограмм</li>
+                            <li class="slide__item">Лук — 5 Штук</li>
+                            <li class="slide__item">Кефир — 1 Литр</li>
+                            <li class="slide__item">Специи — По вкусу</li>
+                            <li class="slide__item">Кинза — По вкусу</li>
+                            <li class="slide__item">Соль — По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Чтоб правильно приготовить шашлык на кефире сделайте хорошие угли. Следите,чтоб во время жарки не вспыхивало пламя, для этого обязательно нужно запастись бутылкой с водой и сбрызгивать шашлык, если появится пламя. Вообще не бросайте
+                            шашлык на мангале без присмотра, а то все может сгореть. Шашлык готов, если при проколе из мясо выделяется прозрачная жидкость.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-8">
+                            <div class="slide__img-8"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из говядины с уксусом</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Говядина — 1 Килограмм </li>
+                            <li class="slide__item">Лук — 3 шт </li>
+                            <li class="slide__item">Уксус виноградный — 2 Ст. ложки</li>
+                            <li class="slide__item">Перец черный молотый — 2 Щепотки</li>
+                            <li class="slide__item">Соль — 2-3 Щепоток</li>
+                            <li class="slide__item">Растительное масло — 2 Ст. ложки</li>
+                            <li class="slide__item">Лавровый лист — 2 Штуки</li>
+                            <li class="slide__item">Приправы для шашлыка — 2 Щепотки</li>
+                        </ul>
+                        <p class="slide__content">С говядиной большинству из нас не хочется заморачиваться - то жестковатое мясо получается, то долго готовить. А ведь все дело в маринаде. Если мариновать правильно - то шашлык получается изумительным. В этом простом рецепте самое
+                            главное - соблюдать пропорции продуктов для маринада и количество мяса.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-9">
+                            <div class="slide__img-9"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из баранины по-армянски</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Баранина с жирком — 1 Килограмм</li>
+                            <li class="slide__item">Лук репчатый — 4 Штуки</li>
+                            <li class="slide__item">Помидор — 4 Штуки</li>
+                            <li class="slide__item">Перец болгарский — 4 Штуки</li>
+                            <li class="slide__item">Баклажан — 2 Штуки</li>
+                            <li class="slide__item">Зелень свежая — 100-120 Грамм</li>
+                            <li class="slide__item">Уксус винный красный — 1-2 Ст. ложек</li>
+                            <li class="slide__item">Тимьян сушеный — 1 Чайная ложка</li>
+                            <li class="slide__item">Перец черный молотый — По вкусу</li>
+                            <li class="slide__item">Соль — По вкусу </li>
+                        </ul>
+                        <p class="slide__content">Классический рецепт шашлыка из баранины по-армянски понравится всем без исключения, потому с ним мясо всегда выходит вкусным и сочным, на самом деле такой шашлык - это беспроигрышный вариант.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-10">
+                            <div class="slide__img-10"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из свинины в майонезе</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Свинина — 800 Грамм</li>
+                            <li class="slide__item">Луковица — 1 Штука</li>
+                            <li class="slide__item">Чеснок — 3 Зубчика</li>
+                            <li class="slide__item">Майонез — 4 Ст. ложки</li>
+                            <li class="slide__item">Кетчуп "Махеевъ" шашлычный — По вкусу</li>
+                            <li class="slide__item">Соль, перец — По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Как известно, залог хорошего шашлыка из свинины - это не только качественное, свежее мясо, но еще и правильно подобранный маринад. Я за свою жизнь испробовал десятки разных маринадов, и одна из моих новейших находок - это самый
+                            тривиальный маринад из майонеза с лимонным соком, который, несмотря на свою простоту, делает шашлык удивительно вкусным, сочным и нежным.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-11">
+                            <div class="slide__img-11"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык свинной в пиве</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Шея свиная — 2 Килограмма</li>
+                            <li class="slide__item">Лук репчатый — 2-3 Штуки</li>
+                            <li class="slide__item">Пиво светлое — 0,5 Литра</li>
+                            <li class="slide__item">Чеснок — 2-3 Зубчиков </li>
+                            <li class="slide__item">Лавровый лист — 2-3 Штук</li>
+                            <li class="slide__item">Пряные травы — По вкусу</li>
+                            <li class="slide__item">Соль — - По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Чтобы приготовить вкусный шашлык из свинины в пиве, нужно запастись хорошим куском свиной шеи, качественным светлым пивом (желательно брать напиток покрепче) и... терпением, потому что третий основной компонент этого шашлыка —
+                            тертый лук. </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-12">
+                            <div class="slide__img-12"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык по-узбекски</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Свинина — 800 Грамм</li>
+                            <li class="slide__item">Мускатный орех — 1 Чайная ложка</li>
+                            <li class="slide__item">Гранат — 100 Грамм</li>
+                            <li class="slide__item">Масло растительное — 3 Ст. ложки</li>
+                            <li class="slide__item">Перец — 1\2 Чайных ложек</li>
+                            <li class="slide__item">Специи — По вкусу (зира, кориандр)</li>
+                            <li class="slide__item">Соль — 1,5 Чайных ложки </li>
+                            <li class="slide__item">Чеснок — 2 Зубчика</li>
+                        </ul>
+                        <p class="slide__content">Приготовить дома шашлык по-узбекски можно прямо на сковороде, на гриле или в духовке. Я замачиваю палочки на 15 минут в воде, чтоб они не горели и выкладываю в фольге в духовку на 30 минут при 190 градусах. Затем фольгу раскрываю
+                            и запекаю под грилем 10 минут. Готовый шашлык по-узбекски подавайте с рисом, свежими овощами и соусами.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-13">
+                            <div class="slide__img-13"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из свинины по-грузински</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Свинина — 1 Килограмм (шея)</li>
+                            <li class="slide__item">Лук — 100 Грамм</li>
+                            <li class="slide__item">Помидоры — 100 Грамм</li>
+                            <li class="slide__item">Сушеный базилик — По вкусу</li>
+                            <li class="slide__item">Лимон — 1/2 Штуки</li>
+                            <li class="slide__item">Сушеный эстрагон — По вкусу</li>
+                            <li class="slide__item">Чеснок — 2 Зубчика</li>
+                            <li class="slide__item">Соль, перец — По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Готовится шашлык из свинины по-грузински довольно легко - главное, чтобы ингредиенты были свежими и качественными. Советую мясо мариновать с вечера, тогда оно получится более сочным, пропитавшимся, более ароматным и аппетитным.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-14">
+                            <div class="slide__img-14"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык в духовке в рукаве</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Баранина — 800 Грамм</li>
+                            <li class="slide__item"> Соль — - По вкусу</li>
+                            <li class="slide__item">Перец — - По вкусу</li>
+                            <li class="slide__item">Лимон — 1 Штука</li>
+                            <li class="slide__item">Сало — - По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Рецепт шашлыка в духовке в рукаве, по сути, заключается в том, что мясо сначала уваривается, а затем уже обжаривается и приобретает аппетитную корочку, свойственную шашлыку, приготовленному на углях.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-15">
+                            <div class="slide__img-15"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из телятины</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Телятина — 1 Килограмм</li>
+                            <li class="slide__item">Лук репчатый — 1-2 Штук</li>
+                            <li class="slide__item">Зеленый лук измельченный — 2-3 Ст. ложек</li>
+                            <li class="slide__item">Майонез — 2 Ст. ложки</li>
+                            <li class="slide__item">Специи — По вкусу</li>
+                            <li class="slide__item"> Соль — По вкусу</li>
+                        </ul>
+                        <p class="slide__content">Сам принцип его маринования вполне обычный, но вот само мясо получается намного нежнее и мягче, как мне кажется, плюс вкус у него довольно интересный. Поэтому когда в следующий раз вы соберетесь устроить вылазку на природу, вспомните
+                            про этот рецепт приготовления шашлыка из телятины, уверена, с таким вкуснейшим мяском ваш отдых пройдет великолепно.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__img-box">
+                        <a href="#img-16">
+                            <div class="slide__img-16"></div>
+                        </a>
+                    </div>
+                    <div class="slide__recipe">
+                        <h2 class="slide__header">Шашлык из филе курицы</h2>
+                        <ul class="slide__list">
+                            <li class="slide__item">Куриное филе — 500 Грамм</li>
+                            <li class="slide__item">Болгарский сладкий перец — 1 Штука</li>
+                            <li class="slide__item">Майонез — 3 Ст. ложки</li>
+                            <li class="slide__item">Соль — 2 Щепотки</li>
+                            <li class="slide__item">Перец молотый — 1-2 Щепоток</li>
+                            <li class="slide__item">Сушеный базилик — 1 Щепотка</li>
+                        </ul>
+                        <p class="slide__content">Куриное филе - настолько нежный продукт, что не требует длительной мариновки. И если вам неожиданно выпала возможность выбраться на природу и пожарить шашлыки, не горюйте, что у вас нет замаринованного мяса. Вы можете взять этот
+                            простой рецепт приготовления шашлыка из куриного филе и по дороге закупить необходимые продукты.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

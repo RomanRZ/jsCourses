@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lab11_task8</title>
+    <style>
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function matrixB(rows, columns) {
+        let arrB = [];
+        let output = `<table><tbody>`;
+        for (let i = 0; i < rows; i++) {
+          arrB[i] = [];
+          output += `<tr>`;
+          for (let j = 0; j < columns; j++) {
+            arrB[i][j] = `${i + 1}-${j + 1}`;
+            output += `<td>${arrB[i][j]}</td>`;
+          }
+          output += `</tr>`;
+        }
+        output += `</tbody></table>`;
+        document.body.innerHTML = output;
+        return arrB;
+      }
+      function matrixD(arr) {
+        let arrD = [];
+        let output = `<table><tbody><tr>`;
+        for (let i = 0; i < arr[0].length; i++) {
+          arrD[i] = arr[0][i];
+          output += `<td>${arrD[i]}</td>`;
+        }
+        output += `</tr></tbody></table>`;
+        let p = document.createElement("p");
+        p.innerHTML = output;
+        document.body.appendChild(p);
+        return arrD;
+      }
+      matrixB(5, 10);
+      matrixD(matrixB(5, 10));
+    </script>
+  </body>
+</html>

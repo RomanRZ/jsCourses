@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>task1</title>
+    </head>
+    <body>
+        <main>
+            <form>
+                <!-- Name's form -->
+                <label for="name">Name</label><br />
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                /><br /><br />
+
+                <!-- Email's form -->
+                <label for="email">Email</label><br />
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                />
+                <br /><br />
+
+                <!-- Sex's form -->
+                <span>Sex</span><br />
+                <input type="radio" name="sex" id="male" checked />
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="female" />
+                <label for="female">Female</label><br /><br />
+
+                <!-- Status' form -->
+                <span>Current status</span><br />
+                <input type="checkbox" id="student" />
+                <label for="student">Student</label><br />
+                <input type="checkbox" id="employed" />
+                <label for="employed">Employed</label><br />
+                <input type="checkbox" id="unemployed" />
+                <label for="unemployed">Unemployed</label><br /><br />
+
+                <!-- Date's form -->
+                <label for="date">Birthday</label><br />
+                <input id="date" type="date" /><br /><br />
+
+                <!-- Skills' form -->
+                <span>Skills and technologies</span><br />
+                <select multiple size="11">
+                    <optgroup label="Tech skills">
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">JavaScript</option>
+                        <option value="">ASP.NET</option>
+                        <option value="">PHP</option>
+                    </optgroup>
+                    <optgroup label="Soft skills">
+                        <option value="">Time management</option>
+                        <option value="">Proactivity</option>
+                        <option value="">Teamwork</option>
+                        <option value="">Leadership</option>
+                    </optgroup>
+                </select>
+                <br /><br />
+
+                <!-- Photo's form -->
+                <span>Photo</span><br />
+                <input type="file" accept="image/*" /><br /><br />
+
+                <!-- Comments' form -->
+                <label for="textarea">Comments</label><br />
+                <textarea
+                    id="textarea"
+                    cols="30"
+                    rows="10"
+                    name="comments"
+                ></textarea
+                ><br /><br />
+
+                <!-- Buttons' forms -->
+                <input type="submit" /><input type="reset" />
+            </form>
+        </main>
+    </body>
+</html>

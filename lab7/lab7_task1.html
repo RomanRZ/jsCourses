@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./lab7_task1.css" />
+    <title>lab7_task1</title>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="radio"
+        name="dessert"
+        class="dessert"
+        id="all-desserts"
+        checked
+      />
+      <input
+        type="radio"
+        name="dessert"
+        class="dessert dessert--pie"
+        id="pie"
+      />
+      <input
+        type="radio"
+        name="dessert"
+        class="dessert dessert--roll"
+        id="roll"
+      />
+      <input
+        type="radio"
+        name="dessert"
+        class="dessert dessert--cheesecake"
+        id="cheesecake"
+      />
+      <input
+        type="radio"
+        name="dessert"
+        class="dessert dessert--cake"
+        id="cake"
+      />
+      <input
+        type="radio"
+        name="dessert"
+        class="dessert dessert--big-cake"
+        id="big-cake"
+      />
+      <header class="header">
+        <h1 class="header__title">Тортики, тістечка</h1>
+      </header>
+      <aside class="side-bar">
+        <ul class="nav">
+          <li class="nav__item">
+            <label class="nav__label" for="pie">Пиріг</label>
+          </li>
+          <li class="nav__item">
+            <label class="nav__label" for="roll">Рулет</label>
+          </li>
+          <li class="nav__item">
+            <label class="nav__label" for="cheesecake">Сирники</label>
+          </li>
+          <li class="nav__item">
+            <label class="nav__label" for="cake">Тістечко</label>
+          </li>
+          <li class="nav__item">
+            <label class="nav__label" for="big-cake">Торт</label>
+          </li>
+        </ul>
+      </aside>
+      <main class="gallery">
+        <div class="gallery__row">
+          <div class="gallery__img-wrapper gallery__img-wrapper--small">
+            <img src="./img/cake-1.jpg" alt="cake" class="gallery__img" />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Тістечко з вишнею</h4>
+              <p class="desc-img__serving">Кількість порцій: 1.</p>
+            </div>
+          </div>
+          <div class="gallery__img-wrapper gallery__img-wrapper--medium">
+            <img src="./img/pie-1.png" alt="pie" class="gallery__img" />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Пиріг з вишнями</h4>
+              <p class="desc-img__serving">Кількість порцій: 8.</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__row">
+          <div class="gallery__img-wrapper gallery__img-wrapper--small">
+            <img src="./img/big-cake.jpg" alt="big-cake" class="gallery__img" />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Шоколадний торт з вишнями</h4>
+              <p class="desc-img__serving">Кількість порцій: 10.</p>
+            </div>
+          </div>
+          <div class="gallery__img-wrapper gallery__img-wrapper--small">
+            <img src="./img/roll.jpg" alt="roll" class="gallery__img" />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Рулет зі згущеним молоком</h4>
+              <p class="desc-img__serving">Кількість порцій: 6.</p>
+            </div>
+          </div>
+          <div class="gallery__img-wrapper gallery__img-wrapper--small">
+            <img src="./img/pie-2.jpg" alt="pie" class="gallery__img" />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Пиріг з м'ясом</h4>
+              <p class="desc-img__serving">Кількість порцій: 10.</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__row">
+          <div class="gallery__img-wrapper gallery__img-wrapper--medium">
+            <img src="./img/cake-2.jpg" alt="cake" class="gallery__img" />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Тістечка з полуничним кремом</h4>
+              <p class="desc-img__serving">Кількість порцій: 6.</p>
+            </div>
+          </div>
+          <div class="gallery__img-wrapper gallery__img-wrapper--small">
+            <img
+              src="./img/cheesecake.jpg"
+              alt="cheesecake"
+              class="gallery__img"
+            />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Сирники</h4>
+              <p class="desc-img__serving">Кількість порцій: 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__row">
+          <div class="gallery__img-wrapper gallery__img-wrapper--large">
+            <img
+              src="./img/big-cake-2.jpg"
+              alt="big-cake"
+              class="gallery__img"
+            />
+            <div class="gallery__img-desc desc-img">
+              <h4 class="desc-img__title">Торт "Весняний настрій"</h4>
+              <p class="desc-img__serving">Кількість порцій: 8.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="rating">
+        <h2 class="rating__title">Рейтинг</h2>
+        <label for="rating__checkbox" class="rating__label">
+          За спаданням</label
+        >
+        <input type="checkbox" class="rating__checkbox" id="rating__checkbox" />
+        <ul class="rating__list">
+          <li class="rating__item rating__item--green">
+            <h3 class="rating__subject">Пиріг</h3>
+            <div class="rating__scale  green"></div>
+          </li>
+          <li class="rating__item rating__item--yellow">
+            <h3 class="rating__subject">Рулет</h3>
+            <div class="rating__scale yellow"></div>
+          </li>
+          <li class="rating__item rating__item--red">
+            <h3 class="rating__subject">Сирники</h3>
+            <div class="rating__scale red"></div>
+          </li>
+          <li class="rating__item rating__item--green">
+            <h3 class="rating__subject">Тістечко</h3>
+            <div class="rating__scale green"></div>
+          </li>
+          <li class="rating__item rating__item--green">
+            <h3 class="rating__subject">Торт</h3>
+            <div class="rating__scale green"></div>
+          </li>
+        </ul>
+      </aside>
+      <footer class="footer">
+        <p class="footer__text">&copy; 2019 Rabcheniuk R.</p>
+      </footer>
+    </div>
+  </body>
+</html>

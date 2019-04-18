@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lab11_task5</title>
+  </head>
+  <body>
+    <script>
+      function amountOfCoins(amount) {
+        const coins = [25, 10, 5, 1];
+        let updatedNum = amount * 100;
+        let result25 = 0;
+        let result10 = 0;
+        let result5 = 0;
+        let result1 = 0;
+        while (updatedNum) {
+          while (updatedNum >= coins[0]) {
+            result25++;
+            updatedNum -= coins[0];
+          }
+          while (updatedNum >= coins[1]) {
+            result10++;
+            updatedNum -= coins[1];
+          }
+          while (updatedNum >= coins[2]) {
+            result5++;
+            updatedNum -= coins[2];
+          }
+          while (updatedNum >= coins[3]) {
+            result1++;
+            updatedNum -= coins[3];
+          }
+          document.body.innerHTML = `
+        <h1>Количество монет:</h1>
+        <p>25&cent; - ${result25} шт</p>
+        <p>10&cent; - ${result10} шт</p>
+        <p>5&cent; - ${result5} шт</p>
+        <p>1&cent; - ${result1} шт</p>
+        <h3>Наименьшее количество монет:</h3>
+        <p>${result25 + result10 + result5 + result1} шт</p>
+      `;
+        }
+      }
+
+      amountOfCoins(prompt("Введите количество сдачи", ""));
+    </script>
+  </body>
+</html>

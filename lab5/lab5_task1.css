@@ -1,0 +1,240 @@
+/* Main styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.checkbox--bar:checked~.container {
+    max-width: 1200px;
+}
+
+.checkbox--column:checked~.container {
+    max-width: 900px;
+}
+
+
+/* View toggle */
+
+.view-toggle {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.view-toggle__header {
+    margin-bottom: 10px;
+}
+
+.checkbox--bar,
+.checkbox--column {
+    display: none;
+}
+
+.view-toggle__label--bar,
+.view-toggle__label--column {
+    display: inline-block;
+    padding: 10px;
+    background: rgba(212, 227, 255, 1);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox--bar:checked~.view-toggle .view-toggle__label--bar,
+.checkbox--column:checked~.view-toggle .view-toggle__label--column {
+    background: rgba(11, 41, 112, 1);
+    color: #fff;
+}
+
+
+/* Card main styles */
+
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 550px;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 16px;
+    outline: 5px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+.checkbox--bar:checked~.container .card {
+    width: 300px;
+}
+
+.card__header {
+    color: rgb(127, 172, 232);
+}
+
+.card:hover {
+    background: rgb(255, 255, 224);
+    outline: 5px solid #9E8463;
+    outline-offset: 5px;
+}
+
+.card__image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-card__img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.card__header {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0 5px;
+    text-align: center;
+}
+
+.card__header:hover {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.card__category {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(139, 134, 130);
+    font-weight: normal;
+}
+
+.card__star-header {
+    text-align: center;
+    font-size: 13px;
+}
+
+.card__price {
+    font-size: 18px;
+    margin: 5px 0 5px;
+    text-align: center;
+}
+
+.card:hover .card__price {
+    color: rgb(0, 204, 102);
+}
+
+.card__old-price {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.card__description {
+    text-indent: 10px;
+    text-align: justify;
+    font-size: 12px;
+    transition: all .5s ease-in-out;
+}
+
+.card__description:hover {
+    font-size: 13px;
+}
+
+
+/* Start rating */
+
+.star-rating {
+    font-size: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.star-rating__wrap {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.star-rating__wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.star-rating__ico {
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: #FFB300;
+}
+
+.star-rating__ico:last-child {
+    padding-left: 0;
+}
+
+.star-rating__input {
+    display: none;
+}
+
+.star-rating__ico:hover:before,
+.star-rating__ico:hover~.star-rating__ico:before,
+.star-rating__input:checked~.star-rating__ico:before {
+    content: "\f005";
+}
+
+
+/* Card column styles */
+
+.checkbox--column:checked~.container .card {
+    font-size: 0;
+    width: 900px;
+    height: 300px;
+    position: relative;
+}
+
+.checkbox--column:checked~.container .card__image {
+    display: inline-block;
+    padding: 5px;
+    width: 33%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox--column:checked~.container .card__features {
+    display: inline-block;
+    padding: 5px;
+    width: 33%;
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox--column:checked~.container .card__header {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.checkbox--column:checked~.container .card__description {
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

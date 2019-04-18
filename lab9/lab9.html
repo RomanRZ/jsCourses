@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab9</title>
+    <style>
+      h1 {
+        font-size: 25px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 50px 0 30px 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Завдання 1: SVG</h1>
+
+    <svg width="500" height="100">
+      <polygon
+        points="30,30 70,30 90,70 10,70"
+        fill="none"
+        stroke="gray"
+        stroke-width="1.5"
+      />
+
+      <polygon points="150,10 190,50 150,90 110,50" fill="red" />
+
+      <polyline
+        points="210,20 290,25 210,30 290,35 210,40 290,45 210,50 290,55 210,60 290,65 210,70 290,75 210,80"
+        fill="none"
+        stroke="gray"
+        stroke-width="1.5"
+      />
+
+      <path
+        d="M 350,90 C 405,90 405,10 350,10
+                     M 350,10 C 295,10 295,80 350,80
+                     M 350,80 C 395,80 395,20 350,20
+                     M 350,20 C 305,20 305,70 350,70
+                     M 350,70 C 385,70 385,30 350,30
+                     M 350,30 C 315,30 315,60 350,60
+                     M 350,60 C 375,60 375,40 350,40
+                     M 350,40 C 340,40 340,50 350,50"
+        fill="none"
+        stroke="gray"
+        stroke-width="1.5"
+      />
+
+      <path
+        d="M 450,10 Q 450,50 480,20 Q 450,50 490,50 Q 450,50 480,80 Q 450,50 450,90 Q 450,50 420,80 Q 450,50 410,50 Q 450,50 420,20 Q 450,50 450,10"
+        stroke="orange"
+        stroke-width="1.5"
+        fill="yellow"
+      />
+    </svg>
+
+    <h1>Завдання 1: Canvas</h1>
+
+    <canvas width="500" height="100"></canvas>
+
+    <script>
+      var canvas = document.querySelector("canvas");
+      var cx = canvas.getContext("2d");
+      cx.beginPath();
+      cx.moveTo(30, 30);
+      cx.lineTo(70, 30);
+      cx.lineTo(90, 70);
+      cx.lineTo(10, 70);
+      cx.closePath();
+      cx.strokeStyle = "gray";
+      cx.lineWidth = 2;
+      cx.stroke();
+    </script>
+
+    <script>
+      var canvas = document.querySelector("canvas");
+      var cx = canvas.getContext("2d");
+      cx.beginPath();
+      cx.moveTo(150, 10);
+      cx.lineTo(190, 50);
+      cx.lineTo(150, 90);
+      cx.lineTo(110, 50);
+      cx.closePath();
+      cx.fillStyle = "red";
+      cx.fill();
+    </script>
+
+    <script>
+      var canvas = document.querySelector("canvas");
+      var cx = canvas.getContext("2d");
+      cx.beginPath();
+      cx.moveTo(210, 20);
+      cx.lineTo(290, 25);
+      cx.lineTo(210, 30);
+      cx.lineTo(290, 35);
+      cx.lineTo(210, 40);
+      cx.lineTo(290, 45);
+      cx.lineTo(210, 50);
+      cx.lineTo(290, 55);
+      cx.lineTo(210, 60);
+      cx.lineTo(290, 65);
+      cx.lineTo(210, 70);
+      cx.lineTo(290, 75);
+      cx.lineTo(210, 80);
+      cx.strokeStyle = "gray";
+      cx.lineWidth = 2;
+      cx.stroke();
+    </script>
+
+    <script>
+      var canvas = document.querySelector("canvas");
+      var cx = canvas.getContext("2d");
+      cx.beginPath();
+      cx.moveTo(350, 90);
+      cx.bezierCurveTo(405, 90, 405, 10, 350, 10);
+      cx.moveTo(350, 10);
+      cx.bezierCurveTo(295, 10, 295, 80, 350, 80);
+      cx.moveTo(350, 80);
+      cx.bezierCurveTo(395, 80, 395, 20, 350, 20);
+      cx.moveTo(350, 20);
+      cx.bezierCurveTo(305, 20, 305, 70, 350, 70);
+      cx.moveTo(350, 70);
+      cx.bezierCurveTo(385, 70, 385, 30, 350, 30);
+      cx.moveTo(350, 30);
+      cx.bezierCurveTo(315, 30, 315, 60, 350, 60);
+      cx.moveTo(350, 60);
+      cx.bezierCurveTo(375, 60, 375, 40, 350, 40);
+      cx.moveTo(350, 40);
+      cx.bezierCurveTo(340, 40, 340, 50, 350, 50);
+      cx.strokeStyle = "gray";
+      cx.lineWidth = 2;
+      cx.stroke();
+    </script>
+
+    <script>
+      var canvas = document.querySelector("canvas");
+      var cx = canvas.getContext("2d");
+      cx.beginPath();
+      cx.moveTo(450, 10);
+      cx.quadraticCurveTo(450, 50, 480, 20);
+      cx.quadraticCurveTo(450, 50, 490, 50);
+      cx.quadraticCurveTo(450, 50, 480, 80);
+      cx.quadraticCurveTo(450, 50, 450, 90);
+      cx.quadraticCurveTo(450, 50, 420, 80);
+      cx.quadraticCurveTo(450, 50, 410, 50);
+      cx.quadraticCurveTo(450, 50, 420, 20);
+      cx.quadraticCurveTo(450, 50, 450, 10);
+      cx.strokeStyle = "orange";
+      cx.lineWidth = 2;
+      cx.stroke();
+      cx.fillStyle = "yellow";
+      cx.fill();
+    </script>
+
+    <h1>Завдання 2</h1>
+
+    <svg width="500" height="100">
+      <circle r="40" cx="50" cy="50" fill="yellow" />
+      <ellipse rx="5" ry="7" cx="35" cy="35" fill="black" />
+      <ellipse rx="5" ry="7" cx="65" cy="35" fill="black" />
+      <path
+        d="M 30,60 C 40,80 60,80 70,60"
+        fill="none"
+        stroke="black"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+
+      <circle r="40" cx="150" cy="50" fill="yellow" />
+      <ellipse rx="5" ry="7" cx="135" cy="35" fill="black" />
+      <ellipse rx="5" ry="7" cx="165" cy="35" fill="black" />
+      <path
+        d="M 130,60 170,60"
+        fill="none"
+        stroke="black"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+
+      <circle r="40" cx="250" cy="50" fill="yellow" />
+      <ellipse rx="5" ry="7" cx="235" cy="35" fill="black" />
+      <ellipse rx="5" ry="7" cx="265" cy="35" fill="black" />
+      <path
+        d="M 230,70 C 240,60 260,60 270,70"
+        fill="none"
+        stroke="black"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+
+      <circle r="40" cx="350" cy="50" fill="yellow" />
+      <ellipse rx="5" ry="7" cx="335" cy="35" fill="black" />
+      <path
+        d="M 355,40 C 355,30 375,30 375,40 M 375,40 C 375,37 355,37 355,40"
+        fill="black"
+        stroke-linecap="round"
+      />
+      <path
+        d="M 330,60 C 340,70 360,70 370,60"
+        fill="none"
+        stroke="black"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+
+      <circle r="40" cx="450" cy="50" fill="yellow" />
+      <ellipse rx="5" ry="7" cx="435" cy="35" fill="black" />
+      <ellipse rx="5" ry="7" cx="465" cy="35" fill="black" />
+      <path
+        d="M 430,60 470,60 M 470,60 C 470,80 430,80 430,60"
+        stroke="black"
+        stroke-width="3"
+        fill="white"
+        stroke-linecap="round"
+      />
+    </svg>
+  </body>
+</html>

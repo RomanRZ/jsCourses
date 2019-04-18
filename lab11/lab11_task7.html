@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lab11_task7</title>
+  </head>
+  <body>
+    <script>
+      function changeArr(arr) {
+        let max = arr[0];
+        let min = arr[0];
+        let maxInd;
+        let minInd;
+        // The middle of array (Odd or Even)
+        let middle =
+          arr.length % 2 === 0 ? arr.length / 2 : (arr.length - 1) / 2;
+        // Find the maximum and minimum indices
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] >= max ? ((max = arr[i]), (maxInd = i)) : null;
+          arr[i] <= min ? ((min = arr[i]), (minInd = i)) : null;
+        }
+        if (maxInd === minInd + 1 || maxInd === minInd - 1) {
+          //Position first min, then max
+          if (arr[minInd] === arr[maxInd - 1]) {
+            let temp = arr[minInd];
+            arr[minInd] = arr[maxInd];
+            arr[maxInd] = temp;
+          }
+          // Position first max, then min
+          else {
+            let temp = arr[maxInd - 1];
+            arr[maxInd - 1] = arr[maxInd];
+            arr[maxInd] = temp;
+          }
+        } else {
+          for (let i = 0, n = 1; i < middle; i++, n++) {
+            let temp = arr[i];
+            arr[i] = arr[arr.length - n];
+            arr[arr.length - n] = temp;
+          }
+        }
+        console.log(arr);
+        return arr;
+      }
+      console.log("[90, 10, 1, 100, 9, 5, 2, 8]");
+      changeArr([90, 10, 1, 100, 9, 5, 2, 8]);
+      console.log("100 поменялось местами с 1");
+      console.log("");
+      console.log("[90, 10, 1, 9, 5, 100, 2, 8, 6]");
+      changeArr([90, 10, 1, 9, 5, 100, 2, 8, 6]);
+      console.log("Массив перевернут");
+    </script>
+  </body>
+</html>

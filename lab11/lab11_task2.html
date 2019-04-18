@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lab11_task2</title>
+  </head>
+  <body>
+    <script>
+      function medium(a, b, c) {
+        if ((a > b && a < c) || (a > c && a < b)) {
+          return a;
+        }
+        if ((b > a && b < c) || (b > c && b < a)) {
+          return b;
+        }
+        return c;
+      }
+      console.log(medium(5, 0, 100));
+      console.log(medium(5, 6, 1));
+      console.log(medium(5, 20, 100));
+      console.log(medium(5, 20, 1));
+      console.log(medium(5, 20, 10));
+      console.log(medium(12, 12, 11));
+      console.log(medium(12, 3, 2));
+      console.log(medium(2, 3, 3));
+    </script>
+  </body>
+</html>

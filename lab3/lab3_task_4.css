@@ -1,0 +1,11 @@
+td:nth-child(2n + 3) {
+  background: #f9f5da;
+}
+
+tr:nth-child(2n) td:first-child {
+  background: #9dcedd;
+}
+
+tr:nth-child(2n) td:nth-child(2n + 2) {
+  background: #9dcedd;
+}

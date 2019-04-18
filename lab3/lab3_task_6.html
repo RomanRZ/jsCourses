@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./lab3_task_6.css">
+        <title>task_6</title>
+    </head>
+
+    <body>
+        <article class="schedule">
+            <h1>Расписание работы поликлиники №10</h1>
+            <h2>Кабинет</h2>
+            <input type="checkbox" id="room42"><label for="room42">42</label>
+            <input type="checkbox" id="room45"><label for="room45">45</label>
+            <input type="checkbox" id="room44"><label for="room44">44</label>
+            <input type="checkbox" id="room46"><label for="room46">46</label>
+            <input type="checkbox" id="room23"><label for="room23">23</label>
+            <input type="checkbox" id="room98"><label for="room98">98</label>
+            <input type="checkbox" id="room33"><label for="room33">33</label>
+            <input type="checkbox" id="room20"><label for="room20">20</label>
+            <input type="checkbox" id="room91"><label for="room91">91</label>
+            <input type="checkbox" id="room77"><label for="room77">77</label>
+            <input type="checkbox" id="room65"><label for="room65">65</label>
+            <input type="checkbox" id="room34"><label for="room34">34</label>
+            <input type="checkbox" id="room35"><label for="room35">35</label>
+            <h2>Фильтр по должности</h2>
+            <input type="checkbox" id="chief" checked><label for="chief">Главный врач</label>
+            <input type="checkbox" id="head_of_therapy" checked><label for="head_of_therapy">Зав. терапией</label>
+            <input type="checkbox" id="therapist" checked><label for="therapist">Терапевт</label>
+            <input type="checkbox" id="endocrinologist" checked><label for="endocrinologist">Эндокринолог</label>
+            <input type="checkbox" id="traumatologist" checked><label for="traumatologist">Травматолог</label>
+            <input type="checkbox" id="dermatovenerologist" checked><label for=dermatovenerologist>Дерматовенеролог</label>
+            <input type="checkbox" id="psychiatrist" checked><label for="psychiatrist">Психиатр</label>
+            <input type="checkbox" id="head_of_surgery" checked><label for="head_of_surgery">Зав. хирургией</label>
+            <input type="checkbox" id="surgeon" checked><label for=surgeon>Хирург</label>
+            <input type="checkbox" id="otolaryngologist" checked><label for="otolaryngologist">Отоларинголог</label>
+            <input type="checkbox" id="ophthalmologist" checked><label for="ophthalmologist">Офтальмолог</label>
+            <input type="checkbox" id="urologist" checked><label for=urologist>Уролог</label>
+            <input type="checkbox" id="gynecologist" checked><label for="gynecologist">Гинеколог</label>
+            <h2>Фильтр по дню недели</h2>
+            <input type="checkbox" id="mon" checked><label for="mon">Понедельник</label>
+            <input type="checkbox" id="tue" checked><label for="tue">Вторник</label>
+            <input type="checkbox" id="wed" checked><label for="wed">Среда</label>
+            <input type="checkbox" id="thu" checked><label for="thu">Четверг</label>
+            <input type="checkbox" id="fri" checked><label for="fri">Пятница</label>
+            <input type="checkbox" id="sat" checked><label for="sat">Суббота</label>
+            <input type="checkbox" id="sun" checked><label for="sun">Воскресенье</label>
+            <h2>Часы работы</h2>
+            <input type="checkbox" id="first" checked><label for="first">Первая половина дня</label>
+            <input type="checkbox" id="second" checked><label for="second">Вторая половина дня</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>№ кабинета</th>
+                        <th>Должность</th>
+                        <th>ФИО</th>
+                        <th>Понедельник</th>
+                        <th>Вторник</th>
+                        <th>Среда</th>
+                        <th>Четверг</th>
+                        <th>Пятница</th>
+                        <th>Суббота</th>
+                        <th>Воскресенье</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="room42 chief">
+                        <td>1</td>
+                        <td>42</td>
+                        <td>Главный врач</td>
+                        <td>Корсакова В.В.</td>
+                        <td class="dfirst">10.00 - 15.00</td>
+                        <td class="dfirst">10.00 - 15.00</td>
+                        <td class="dfirst">10.00 - 15.00</td>
+                        <td class="dfirst">10.00 - 15.00</td>
+                        <td class="dfirst">10.00 - 15.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room45 head_of_therapy">
+                        <td>2</td>
+                        <td>45</td>
+                        <td>Заведующая терапевтическим отделением</td>
+                        <td>Лукина В.В.</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room44 therapist">
+                        <td>3</td>
+                        <td>44</td>
+                        <td>Терапевт</td>
+                        <td>Пугач З.С.</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room46 therapist">
+                        <td>4</td>
+                        <td>46</td>
+                        <td>Терапевт</td>
+                        <td>Зайцева Г.Д.</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room46 therapist">
+                        <td>5</td>
+                        <td>46</td>
+                        <td>Терапевт</td>
+                        <td>Костина В.И.</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dsecond">14.00 - 18.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room23 endocrinologist">
+                        <td>6</td>
+                        <td>23</td>
+                        <td>Эндокринолог</td>
+                        <td>Волощук Л.Г.</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room98 traumatologist">
+                        <td>7</td>
+                        <td>98</td>
+                        <td>Травматолог</td>
+                        <td>Овчарова О.Д.</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room33 dermatovenerologist">
+                        <td>8</td>
+                        <td>33</td>
+                        <td>Дерматовенеролог</td>
+                        <td>Оноприенко Т.Ю.</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room20 psychiatrist">
+                        <td>9</td>
+                        <td>20</td>
+                        <td>Психиатр</td>
+                        <td>Острякова Т.И.</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room91 head_of_surgery">
+                        <td>10</td>
+                        <td>91</td>
+                        <td>Заведующий хирургическим отделением</td>
+                        <td>Децик Е.Н.</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room91 surgeon">
+                        <td>11</td>
+                        <td>91</td>
+                        <td>Хирург</td>
+                        <td>Филиппенко А.Г.</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room77 otolaryngologist">
+                        <td>12</td>
+                        <td>77</td>
+                        <td>Отоларинголог</td>
+                        <td>Радченко А.Б.</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room65 ophthalmologist">
+                        <td>13</td>
+                        <td>65</td>
+                        <td>Офтальмолог</td>
+                        <td>Литвинюк И.О.</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td class="dfirst">08.00 - 13.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                    <tr class="room34 urologist">
+                        <td>14</td>
+                        <td>34</td>
+                        <td>Уролог</td>
+                        <td>Боровская И.А.</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                        <td>Выходной</td>
+                        <td class="dfirst">08.00 - 14.00</td>
+                    </tr>
+                    <tr class="room35 gynecologist">
+                        <td>15</td>
+                        <td>35</td>
+                        <td>Гинеколог</td>
+                        <td>Серкова Г.А.</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td class="dsecond">13.00 - 17.00</td>
+                        <td>Выходной</td>
+                        <td>Выходной</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form>
+                <label for="tel">Phone number</label><br>
+                <input id="tel" type="tel" required><br><br>
+                <label for="email">Email</label><br>
+                <input id="email" type="email" required><br><br>
+                <input id="submit" type="submit" value="Отправить данные на телефон">
+            </form>
+        </article>
+    </body>
+
+</html>

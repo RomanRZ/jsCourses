@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [
+        { price: 10, quantity: 3, number: 5 },
+        { price: 5, quantity: 7, number: 5 },
+        { price: 11, quantity: 6, number: 3 },
+        { price: 12, quantity: 8, number: 8 },
+        { price: 10, quantity: 3, number: 2 },
+        { price: 5, quantity: 3, number: 5 },
+        { price: 10, quantity: 3, number: 5 },
+        { price: 12, quantity: 8, number: 4 },
+        { price: 10, quantity: 3, number: 4 }
+      ];
+      console.log(arr);
+      Array.prototype.mySort = function() {
+        function innerSort(a, b) {
+          if (a > b) return 1;
+          if (a < b) return -1;
+          if (a === b) return 0;
+        }
+        return this.sort((a, b) => {
+          return (
+            innerSort(a.price, b.price) ||
+            innerSort(a.quantity, b.quantity) ||
+            innerSort(a.number, b.number)
+          );
+        });
+      };
+      console.log(arr.mySort());
+
+      //   SortAll: function() {
+      //     this.products.sort((a, b) => {
+      //       // Sort by name
+      //       if (a.name > b.name) return 1;
+      //       if (a.name < b.name) return -1;
+
+      //       // Sort by price
+      //       if (a.price > b.price) return 1;
+      //       if (a.price < b.price) return -1;
+
+      //       // Sort by quantity
+      //       if (a.quantity > b.quantity) return 1;
+      //       if (a.quantity < b.quantity) return -1;
+
+      //       // Sort by amount
+      //       if (a.amount > b.amount) return 1;
+      //       if (a.amount < b.amount) return -1;
+      //     });
+      //   },
+    </script>
+  </body>
+</html>

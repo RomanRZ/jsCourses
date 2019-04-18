@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+.schedule {
+    padding: 2rem;
+}
+
+/* Inputs and lables */
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+    background: rgba(207, 229, 237, 1);
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+/* backlighting lables */
+input#room42:checked~label[for="room42"],
+input#room45:checked~label[for="room45"],
+input#room44:checked~label[for="room44"],
+input#room46:checked~label[for="room46"],
+input#room23:checked~label[for="room23"],
+input#room98:checked~label[for="room98"],
+input#room33:checked~label[for="room33"],
+input#room20:checked~label[for="room20"],
+input#room91:checked~label[for="room91"],
+input#room77:checked~label[for="room77"],
+input#room65:checked~label[for="room65"],
+input#room34:checked~label[for="room34"],
+input#room35:checked~label[for="room35"],
+input#chief:checked~label[for="chief"],
+input#head_of_therapy:checked~label[for="head_of_therapy"],
+input#therapist:checked~label[for="therapist"],
+input#endocrinologist:checked~label[for="endocrinologist"],
+input#traumatologist:checked~label[for="traumatologist"],
+input#dermatovenerologist:checked~label[for="dermatovenerologist"],
+input#psychiatrist:checked~label[for="psychiatrist"],
+input#head_of_surgery:checked~label[for="head_of_surgery"],
+input#surgeon:checked~label[for="surgeon"],
+input#otolaryngologist:checked~label[for="otolaryngologist"],
+input#ophthalmologist:checked~label[for="ophthalmologist"],
+input#urologist:checked~label[for="urologist"],
+input#gynecologist:checked~label[for="gynecologist"],
+input#mon:checked~label[for="mon"],
+input#tue:checked~label[for="tue"],
+input#wed:checked~label[for="wed"],
+input#thu:checked~label[for="thu"],
+input#fri:checked~label[for="fri"],
+input#sat:checked~label[for="sat"],
+input#sun:checked~label[for="sun"],
+input#first:checked~label[for="first"],
+input#second:checked~label[for="second"] {
+    color: #fff;
+    font-weight: bold;
+    background: rgba(141, 179, 55, 1);
+}
+
+/* table */
+table {
+    overflow: hidden;
+    opacity: 0.99;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    /* Main styles */
+    background: rgba(172, 180, 240, 0.5);
+    /* For firefox */
+    /* Works without  alpha*/
+    /* background: rgba(250, 9, 146); */
+}
+
+tbody tr:hover {
+    /* Main styles */
+    background-color: rgba(141, 179, 55, 0.5);
+    /* For firefox */
+    /* Works without  alpha*/
+    /* background-color: rgba(141, 179, 55); */
+}
+
+td:hover:after,
+thead th:hover:after,
+thead th:after {
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+td:hover:after,
+th:hover:after {
+    /* Main styles */
+    background-color: rgba(141, 179, 55, 0.5);
+    /* For firefox */
+    /* Works without  alpha*/
+    /* background-color: rgba(141, 179, 55); */
+}
+
+/* Form */
+form {
+    margin: 2rem;
+}
+
+label[for="tel"],
+label[for="email"],
+label[for="submit"] {
+    background: #fff;
+}
+
+input#tel,
+input#email {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+input#submit {
+    background: rgba(207, 229, 237, 1);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+input#submit:hover {
+    background: rgba(141, 179, 55, 1);
+    color: #fff;
+}
+
+input:required:valid {
+    border: 1px solid green;
+}
+
+input:required:invalid {
+    border: 1px solid red;
+}
+
+input:required:valid~input[type='submit'] {
+    display: inline-block;
+}
+
+input:required:invalid~input[type='submit'] {
+    display: none;
+}
+
+/* Filter */
+tbody tr {
+    display: none;
+}
+
+input#first~table tr td.dfirst,
+input#second~table tr td.dsecond {
+    color: #a6a190;
+}
+
+/* Filter Room */
+input#room42:checked~table tr.room42 td:nth-child(2),
+input#room45:checked~table tr.room45 td:nth-child(2),
+input#room44:checked~table tr.room44 td:nth-child(2),
+input#room46:checked~table tr.room46 td:nth-child(2),
+input#room23:checked~table tr.room23 td:nth-child(2),
+input#room98:checked~table tr.room98 td:nth-child(2),
+input#room33:checked~table tr.room33 td:nth-child(2),
+input#room20:checked~table tr.room20 td:nth-child(2),
+input#room91:checked~table tr.room91 td:nth-child(2),
+input#room77:checked~table tr.room77 td:nth-child(2),
+input#room65:checked~table tr.room65 td:nth-child(2),
+input#room34:checked~table tr.room34 td:nth-child(2),
+input#room35:checked~table tr.room35 td:nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
+/* Filter position */
+input#chief:checked~table tr.chief,
+input#head_of_therapy:checked~table tr.head_of_therapy,
+input#therapist:checked~table tr.therapist,
+input#endocrinologist:checked~table tr.endocrinologist,
+input#traumatologist:checked~table tr.traumatologist,
+input#dermatovenerologist:checked~table tr.dermatovenerologist,
+input#psychiatrist:checked~table tr.psychiatrist,
+input#head_of_surgery:checked~table tr.head_of_surgery,
+input#surgeon:checked~table tr.surgeon,
+input#otolaryngologist:checked~table tr.otolaryngologist,
+input#ophthalmologist:checked~table tr.ophthalmologist,
+input#urologist:checked~table tr.urologist,
+input#gynecologist:checked~table tr.gynecologist {
+    display: table-row;
+}
+
+/* Filter day */
+input#mon~table td:nth-child(5),
+input#tue~table td:nth-child(6),
+input#wed~table td:nth-child(7),
+input#thu~table td:nth-child(8),
+input#fri~table td:nth-child(9),
+input#sat~table td:nth-child(10),
+input#sun~table td:nth-child(11) {
+    opacity: 0.5;
+}
+
+input#mon:checked~table td:nth-child(5),
+input#tue:checked~table td:nth-child(6),
+input#wed:checked~table td:nth-child(7),
+input#thu:checked~table td:nth-child(8),
+input#fri:checked~table td:nth-child(9),
+input#sat:checked~table td:nth-child(10),
+input#sun:checked~table td:nth-child(11) {
+    opacity: 1;
+}
+
+/* Times of day */
+input#first:checked~table tr td.dfirst,
+input#second:checked~table tr td.dsecond {
+    color: black;
+}

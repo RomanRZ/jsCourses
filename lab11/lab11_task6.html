@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lab11_task6</title>
+  </head>
+  <body>
+    <script>
+      function luhnAlgorithm(digits, len) {
+        let sum = 0;
+        let lenth = len;
+        for (let i = 0; i < length; i++) {
+          let cardNum = parseInt(digits / 10);
+          if ((length - i) % 2 === 0) {
+            cardNum = cardNum * 2;
+            if (cardNum > 9) {
+              cardNum = cardNum - 9;
+            }
+          }
+          sum += cardNum;
+        }
+        return sum % 10 === 0;
+      }
+
+      function numberLength(number) {
+        let num = number;
+        let numLength = 0;
+        while (num >= 1) {
+          num /= 10;
+          numLength++;
+        }
+        return numLength;
+      }
+
+      function checkCardType(number) {
+        let length = numberLength(number);
+        let firstNum = parseInt(number / Math.pow(10, length - 1));
+        let firstTwoNums = parseInt(number / Math.pow(10, length - 2));
+        if (luhnAlgorithm(number, numberLength(number))) {
+          if (
+            numberLength(number) === 15 &&
+            (firstTwoNums === 34 || firstTwoNums === 37)
+          ) {
+            return "AMEX";
+          }
+          if (
+            numberLength(number) === 16 &&
+            (firstTwoNums === 51 ||
+              firstTwoNums === 52 ||
+              firstTwoNums === 53 ||
+              firstTwoNums === 54 ||
+              firstTwoNums === 55)
+          ) {
+            return "MASTERCARD";
+          }
+          if (
+            (numberLength(number) === 13 || numberLength(number) === 16) &&
+            firstNum === 4
+          ) {
+            return "VISA";
+          }
+        }
+
+        return "INVALID";
+      }
+
+      console.log(checkCardType(378282246310005));
+      console.log(checkCardType(371449635398431));
+      console.log(checkCardType(5555555555554444));
+      console.log(checkCardType(5105105105105100));
+      console.log(checkCardType(4012888888881881));
+      console.log(checkCardType(4012888888881880));
+      console.log(checkCardType(1234567890));
+      console.log(checkCardType(361049635398431));
+    </script>
+  </body>
+</html>
