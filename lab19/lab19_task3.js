@@ -90,6 +90,13 @@ class PhoneBook {
 const phoneBook = new PhoneBook();
 document.addEventListener("DOMContentLoaded", () => {
   phoneBook.showTable();
+  const people = JSON.parse(localStorage.getItem("people"));
+  if (people) {
+    phoneBook.people = [];
+    people.forEach(person => {
+      phoneBook.people.push(person);
+    });
+  }
 
   document.querySelector(".add-form").addEventListener("submit", e => {
     e.preventDefault();
