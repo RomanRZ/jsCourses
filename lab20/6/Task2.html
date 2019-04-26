@@ -1,0 +1,23 @@
+﻿<!--
+Вам нужно сделать чекбоксы неактивными
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6.2</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+      // Ваш код
+      $(document).ready(function() {
+        $("input").click(() => false);
+      });
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" checked="checked" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" checked="checked" />
+  </body>
+</html>

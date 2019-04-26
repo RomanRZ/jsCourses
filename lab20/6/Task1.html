@@ -1,0 +1,42 @@
+﻿<!--
+Вам нужно удалить из всех нечетных параграфов классы «blue» и «under».
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6.1</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("p").removeClass("blue under");
+      });
+      // Ваш код
+    </script>
+    <style>
+      p {
+        margin: 4px;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      .under {
+        text-decoration: underline;
+      }
+
+      .highlight {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="blue under">Hello</p>
+    <p class="blue under highlight">and</p>
+    <p class="blue under">then</p>
+    <p class="blue under">Goodbye</p>
+  </body>
+</html>

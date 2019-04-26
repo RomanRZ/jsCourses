@@ -1,0 +1,28 @@
+﻿<!--
+Вам нужно вставить изображение большого размера с внешнего ресурса (для того, чтобы оно дольше загружалось).
+После загрузки изображения должно отобразится модальное окно с сообщением о успешной загрузке изображения.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+      $(() => {
+        $("img").load(() => {
+          alert("img loaded");
+        });
+      });
+
+      // Ваш код
+    </script>
+  </head>
+  <body>
+    <img
+      src="https://i.pinimg.com/originals/c1/b8/c5/c1b8c500517d5482ef9c0c897721c6e0.jpg"
+      alt="img"
+    />
+    <!--Разметка-->
+  </body>
+</html>
